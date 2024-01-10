@@ -1,0 +1,4 @@
+Ship.cpp:3:1:Ship::Ship()	1
+Ship.cpp:7:6:void Ship::setPosition(int, int)	1
+Ship.cpp:12:5:int Ship::getX()	1
+Ship.cpp:16:5:int Ship::getY()	1

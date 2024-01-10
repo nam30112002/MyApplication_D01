@@ -1,0 +1,4 @@
+../Application/User/gui/Model/Enemy.cpp:3:1:Enemy::Enemy()	1
+../Application/User/gui/Model/Enemy.cpp:7:6:void Enemy::setPosition(int, int)	1
+../Application/User/gui/Model/Enemy.cpp:12:5:int Enemy::getX()	1
+../Application/User/gui/Model/Enemy.cpp:16:5:int Enemy::getY()	1

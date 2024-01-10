@@ -1,0 +1,4 @@
+../Application/User/gui/Model/Ship.cpp:3:1:Ship::Ship()	0	static
+../Application/User/gui/Model/Ship.cpp:7:6:void Ship::setPosition(int, int)	0	static
+../Application/User/gui/Model/Ship.cpp:12:5:int Ship::getX()	0	static
+../Application/User/gui/Model/Ship.cpp:16:5:int Ship::getY()	0	static

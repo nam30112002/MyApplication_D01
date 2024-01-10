@@ -1,0 +1,787 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 240,
+            "Height": 320,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 69,
+            "Y": 258,
+            "Width": 100,
+            "Height": 37,
+            "Pressed": "playbutton.png",
+            "Released": "playbutton.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 20,
+            "Y": 81,
+            "Width": 200,
+            "Height": 65,
+            "RelativeFilename": "logo.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen4"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 95,
+            "Y": 160,
+            "Width": 50,
+            "Height": 85,
+            "RelativeFilename": "redcar.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "X": 204,
+            "Y": 282,
+            "Width": 32,
+            "Height": 32,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__designer\\Blue_Icons_Home_32.png",
+                "IconPressed": "__designer\\Blue_Icons_Home_32.png"
+              }
+            ]
+          },
+          {
+            "Type": "Image",
+            "Name": "lamb",
+            "X": 63,
+            "Y": 20,
+            "Width": 32,
+            "Height": 32,
+            "RelativeFilename": "lamb.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ExitFromScreen2"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen3"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen3",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "X": 16,
+            "Y": 83,
+            "Width": 209,
+            "Height": 98,
+            "Filename": "game_over_PNG10.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Button",
+            "Name": "buttonPlayAgain",
+            "X": 60,
+            "Y": 220,
+            "Width": 120,
+            "Height": 38,
+            "Pressed": "try-again.png",
+            "Released": "try-again.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InterPlayAgain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonPlayAgain"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen4"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen4",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "X": 1,
+            "Width": 240,
+            "Height": 320,
+            "Filename": "background.png",
+            "Alpha": 99,
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "playerShip",
+            "X": 105,
+            "Y": 265,
+            "Width": 31,
+            "Height": 36,
+            "Filename": "Ship.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Image",
+            "Name": "bullet",
+            "X": 144,
+            "Y": -23,
+            "Width": 15,
+            "Height": 23,
+            "RelativeFilename": "bullet.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "enemy",
+            "X": 61,
+            "Y": -24,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "enemy.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Y": 4,
+            "Width": 105,
+            "Height": 23,
+            "Filename": "HP.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "hpplayer",
+            "X": 10,
+            "Y": 11,
+            "Width": 85,
+            "Height": 9,
+            "Filename": "hp_player.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Image",
+            "Name": "enemybullet",
+            "X": 46,
+            "Y": 320,
+            "Width": 15,
+            "Height": 9,
+            "RelativeFilename": "enemybullet.png"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "bosslazer",
+            "X": 240,
+            "Y": 113,
+            "Width": 40,
+            "Height": 40,
+            "FileNameFirst": "giphy-0.png",
+            "FileNameLast": "giphy-2.png",
+            "UpdateTicksInterval": 5,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "Image",
+            "Name": "enemyblueO",
+            "X": 17,
+            "Y": -27,
+            "Width": 20,
+            "Height": 27,
+            "RelativeFilename": "enemyble.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "enemyorangeO",
+            "X": 366,
+            "Y": 314,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "enemyorange.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "bluelazerO",
+            "X": 113,
+            "Y": 320,
+            "Width": 15,
+            "Height": 15,
+            "RelativeFilename": "bluelazer.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "orangelazerO",
+            "X": 189,
+            "Y": 320,
+            "Width": 15,
+            "Height": 15,
+            "RelativeFilename": "orangelzer.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 176,
+            "Y": -21,
+            "Width": 20,
+            "Height": 18,
+            "RelativeFilename": "heal.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "x3",
+            "X": 101,
+            "Y": -21,
+            "Width": 20,
+            "Height": 17,
+            "RelativeFilename": "x3.png"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "explore",
+            "X": 241,
+            "Y": 166,
+            "Width": 30,
+            "Height": 36,
+            "FileNameFirst": "explore1.png",
+            "FileNameLast": "explore2.png",
+            "UpdateTicksInterval": 10,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "leftButton",
+            "X": 1,
+            "Width": 120,
+            "Height": 320,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 10,
+              "Interval": 1000
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 120,
+                "Height": 320,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "rightButton",
+            "X": 121,
+            "Width": 120,
+            "Height": 320,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 10,
+              "Interval": 1000
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 120,
+                "Height": 320,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "endgame",
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen3"
+            }
+          },
+          {
+            "InteractionName": "boss",
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen5"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen5",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "X": 1,
+            "Width": 240,
+            "Height": 320,
+            "Filename": "background.png",
+            "Alpha": 99,
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "playerShip",
+            "X": 105,
+            "Y": 266,
+            "Width": 31,
+            "Height": 36,
+            "Filename": "Ship.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Image",
+            "Name": "bullet",
+            "X": 144,
+            "Y": -23,
+            "Width": 15,
+            "Height": 23,
+            "RelativeFilename": "bullet.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Y": 4,
+            "Width": 105,
+            "Height": 23,
+            "Filename": "HP.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "hpplayer",
+            "X": 10,
+            "Y": 11,
+            "Width": 85,
+            "Height": 9,
+            "Filename": "hp_player.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "bossLazer",
+            "X": 100,
+            "Y": 320,
+            "Width": 40,
+            "Height": 40,
+            "FileNameFirst": "giphy-0.png",
+            "FileNameLast": "giphy-2.png",
+            "UpdateTicksInterval": 5,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 176,
+            "Y": -21,
+            "Width": 20,
+            "Height": 18,
+            "RelativeFilename": "heal.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "x3",
+            "X": 101,
+            "Y": -21,
+            "Width": 20,
+            "Height": 17,
+            "RelativeFilename": "x3.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "boss",
+            "X": 46,
+            "Y": 35,
+            "Width": 150,
+            "Height": 91,
+            "RelativeFilename": "boss.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "ultimate",
+            "X": -47,
+            "Y": 105,
+            "Width": 54,
+            "Height": 113,
+            "Filename": "untimate.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "explore",
+            "X": 256,
+            "Y": 108,
+            "Width": 30,
+            "Height": 36,
+            "FileNameFirst": "explore1.png",
+            "FileNameLast": "explore2.png",
+            "UpdateTicksInterval": 10,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage3",
+            "X": 70,
+            "Y": 240,
+            "Width": 100,
+            "Height": 5,
+            "Filename": "healbarboss.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "hpboss",
+            "X": 70,
+            "Y": 241,
+            "Width": 100,
+            "Height": 3,
+            "Filename": "blood_red_bar_0.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "leftButton",
+            "Width": 120,
+            "Height": 320,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 10,
+              "Interval": 1000
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 120,
+                "Height": 320,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "rightButton",
+            "X": 120,
+            "Width": 120,
+            "Height": 320,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 10,
+              "Interval": 1000
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 120,
+                "Height": 320,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "endgame",
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen3"
+            }
+          },
+          {
+            "InteractionName": "wingame",
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen6"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen6",
+        "Components": [
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 64,
+            "Y": 274,
+            "Width": 120,
+            "Height": 38,
+            "Pressed": "try-again.png",
+            "Released": "try-again.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "X": 20,
+            "Y": 12,
+            "Width": 200,
+            "Height": 186,
+            "Filename": "winner.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 67,
+            "Y": 198,
+            "Width": 122,
+            "Height": 38,
+            "TextId": "__SingleUse_JV1B",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 199,
+              "Green": 199,
+              "Blue": 70
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication_D01",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_D01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": []
+  },
+  "Version": "4.20.0",
+  "CreatedBy": "4.20.0"
+}

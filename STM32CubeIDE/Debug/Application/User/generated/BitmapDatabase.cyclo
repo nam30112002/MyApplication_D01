@@ -1,0 +1,2 @@
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/generated/images/src/BitmapDatabase.cpp:75:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	1
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/generated/images/src/BitmapDatabase.cpp:80:10:uint16_t BitmapDatabase::getInstanceSize()	1

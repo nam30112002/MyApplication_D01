@@ -1,0 +1,45 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:114:18:virtual void touchgfx::AbstractButtonContainer::handlePressedUpdated()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:119:18:virtual void touchgfx::AbstractButtonContainer::handleAlphaUpdated()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:34:7:touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	0	static
+../../TouchGFX/gui/include/gui/screen5_screen/Screen5View.hpp:10:10:Screen5View::~Screen5View()	16	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:111:6:virtual void Screen5View::tearDownScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp:34:7:touchgfx::RepeatButtonTrigger::~RepeatButtonTrigger()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:touchgfx::BoxWithBorderButtonStyle<touchgfx::RepeatButtonTrigger>::~BoxWithBorderButtonStyle()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::RepeatButtonTrigger]	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:131:18:void touchgfx::BoxWithBorderButtonStyle<T>::handleAlphaUpdated() [with T = touchgfx::RepeatButtonTrigger]	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:34:7:virtual touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp:34:7:virtual touchgfx::RepeatButtonTrigger::~RepeatButtonTrigger()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:virtual touchgfx::BoxWithBorderButtonStyle<touchgfx::RepeatButtonTrigger>::~BoxWithBorderButtonStyle()	8	static
+../../TouchGFX/gui/include/gui/screen5_screen/Screen5View.hpp:10:10:virtual Screen5View::~Screen5View()	8	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:107:6:virtual void Screen5View::setupScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp:117:10:virtual void touchgfx::RepeatButtonTrigger::handleTickEvent()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp:93:10:virtual void touchgfx::RepeatButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	8	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:10:1:Screen5View::Screen5View()	48	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:40:6:void controlB(touchgfx::Image&, touchgfx::BoxWithBorderButtonStyle<touchgfx::RepeatButtonTrigger>, touchgfx::BoxWithBorderButtonStyle<touchgfx::RepeatButtonTrigger>)	16	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:57:6:void bossMove(touchgfx::Image&, int16_t, int16_t)	4	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:66:6:void bossUlti(touchgfx::Image&, touchgfx::ScalableImage&, int16_t, int16_t, int16_t)	24	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:73:6:void bossAttach(touchgfx::Image&, touchgfx::Image&, int16_t, int16_t, int16_t, int16_t)	16	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:85:6:bool checkCollisionB(const touchgfx::Image&, const touchgfx::Image&)	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:constexpr touchgfx::BoxWithBorderButtonStyle<touchgfx::RepeatButtonTrigger>::BoxWithBorderButtonStyle(const touchgfx::BoxWithBorderButtonStyle<touchgfx::RepeatButtonTrigger>&)	8	static
+D:/tailieuhoctap/Metmoi/MyApplication_D01/TouchGFX/gui/src/screen5_screen/Screen5View.cpp:114:6:virtual void Screen5View::handleTickEvent()	320	static

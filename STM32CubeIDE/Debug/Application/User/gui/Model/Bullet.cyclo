@@ -1,0 +1,4 @@
+../Application/User/gui/Model/Bullet.cpp:3:1:Bullet::Bullet()	1
+../Application/User/gui/Model/Bullet.cpp:7:6:void Bullet::setPosition(int, int)	1
+../Application/User/gui/Model/Bullet.cpp:12:5:int Bullet::getX()	1
+../Application/User/gui/Model/Bullet.cpp:16:5:int Bullet::getY()	1

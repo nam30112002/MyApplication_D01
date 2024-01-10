@@ -1,0 +1,4 @@
+Bullet.cpp:3:1:Bullet::Bullet()	1
+Bullet.cpp:7:6:void Bullet::setPosition(int, int)	1
+Bullet.cpp:12:5:int Bullet::getX()	1
+Bullet.cpp:16:5:int Bullet::getY()	1
